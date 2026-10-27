@@ -1,0 +1,26 @@
+/* Estilos globais - Sistema de Gestão Bancária */
+:root { --azul-banco: #0a1931; }
+.navbar-brand { font-weight: 600; letter-spacing: .5px; }
+.card { border: 0; border-radius: 12px; }
+.card h3 { color: var(--azul-banco); }
+.card.text-success h3, .card.text-danger h3 { color: inherit; }
+.btn-outline-primary { border-color: var(--azul-banco); color: var(--azul-banco); }
+.btn-outline-primary:hover { background: var(--azul-banco); color: #fff; }
+.btn-banco { background: var(--azul-banco); color: #fff; }
+.btn-banco:hover { background: #12294f; color: #fff; }
+.saldo-grande { font-size: 2rem; font-weight: 700; color: var(--azul-banco); }
+.valor-pos { color: #198754; font-weight: 600; }
+.valor-neg { color: #dc3545; font-weight: 600; }
+.table thead th { white-space: nowrap; }
+
+/* Comprovativo */
+.comprovativo { max-width: 640px; margin: 0 auto; background: #fff; border-radius: 12px; padding: 2rem; box-shadow: 0 2px 10px rgba(0,0,0,.08); }
+.comprovativo dt { color: #6c757d; font-weight: 500; }
+.comprovativo dd { margin-bottom: .6rem; }
+.comprovativo .valor { font-size: 1.8rem; font-weight: 700; color: var(--azul-banco); }
+
+@media print {
+    body { background: #fff !important; }
+    .d-print-none { display: none !important; }
+    .card, .comprovativo { box-shadow: none !important; border: 1px solid #ddd; }
+}
